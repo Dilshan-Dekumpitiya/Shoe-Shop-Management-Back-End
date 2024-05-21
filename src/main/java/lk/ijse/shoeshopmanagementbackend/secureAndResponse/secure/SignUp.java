@@ -3,6 +3,7 @@ package lk.ijse.shoeshopmanagementbackend.secureAndResponse.secure;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Null;
+import lk.ijse.shoeshopmanagementbackend.Enum.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
