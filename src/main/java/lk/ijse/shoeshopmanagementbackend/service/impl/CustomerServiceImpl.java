@@ -21,6 +21,7 @@ public class CustomerServiceImpl implements CustomerService {
     final private ConversionData conversionData;
 
     final private CustomerServiceDAO customerServiceDao;
+
     @Override
     public void saveCustomer(CustomerDTO customerDTO) {
         customerDTO.setCustomerId(getNextCustomerId());
