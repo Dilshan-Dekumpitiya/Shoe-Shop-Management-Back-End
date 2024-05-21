@@ -1,10 +1,16 @@
 package lk.ijse.shoeshopmanagementbackend.service.impl;
 
+import jakarta.transaction.Transactional;
 import lk.ijse.shoeshopmanagementbackend.dto.CustomerDTO;
 import lk.ijse.shoeshopmanagementbackend.service.CustomerService;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
+@Transactional
+@AllArgsConstructor
 public class CustomerServiceImpl implements CustomerService {
     @Override
     public void saveCustomer(CustomerDTO customerDTO) {
