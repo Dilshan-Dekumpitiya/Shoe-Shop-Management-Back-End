@@ -28,4 +28,8 @@ public class ConversionData {
     public List<CustomerEntity> getCustomerEntityList(List<CustomerEntity> customerDtos){
         return modelMapper.map(customerDtos,List.class);
     }
+
+    public UserEntity toUserEntity(UserDTO userDTO){
+        return modelMapper.map(userDTO, UserEntity.class);
+    }
 }
