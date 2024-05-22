@@ -1,6 +1,7 @@
 package lk.ijse.shoeshopmanagementbackend.entity;
 
 import jakarta.persistence.*;
+import lk.ijse.shoeshopmanagementbackend.Enum.PaymentMethod;
 
 import java.sql.Timestamp;
 import java.util.List;
