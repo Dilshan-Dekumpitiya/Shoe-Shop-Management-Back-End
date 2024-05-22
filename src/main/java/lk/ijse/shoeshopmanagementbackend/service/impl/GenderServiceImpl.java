@@ -2,6 +2,7 @@ package lk.ijse.shoeshopmanagementbackend.service.impl;
 
 import lk.ijse.shoeshopmanagementbackend.conversion.ConversionData;
 import lk.ijse.shoeshopmanagementbackend.dto.GenderDTO;
+import lk.ijse.shoeshopmanagementbackend.exception.DuplicateException;
 import lk.ijse.shoeshopmanagementbackend.exception.NotFoundException;
 import lk.ijse.shoeshopmanagementbackend.repository.GenderServiceDAO;
 import lk.ijse.shoeshopmanagementbackend.service.GenderService;
