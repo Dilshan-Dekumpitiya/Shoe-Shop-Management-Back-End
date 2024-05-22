@@ -2,6 +2,8 @@ package lk.ijse.shoeshopmanagementbackend.api;
 
 import jakarta.validation.Valid;
 import lk.ijse.shoeshopmanagementbackend.exception.NotFoundException;
+import lk.ijse.shoeshopmanagementbackend.service.GenderService;
+import lk.ijse.shoeshopmanagementbackend.service.InventoryService;
 import lk.ijse.shoeshopmanagementbackend.util.UtilMatters;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
