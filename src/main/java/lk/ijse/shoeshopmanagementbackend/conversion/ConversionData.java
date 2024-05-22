@@ -1,11 +1,7 @@
 package lk.ijse.shoeshopmanagementbackend.conversion;
 
-import lk.ijse.shoeshopmanagementbackend.dto.BranchDTO;
-import lk.ijse.shoeshopmanagementbackend.dto.CustomerDTO;
-import lk.ijse.shoeshopmanagementbackend.dto.UserDTO;
-import lk.ijse.shoeshopmanagementbackend.entity.BranchEntity;
-import lk.ijse.shoeshopmanagementbackend.entity.CustomerEntity;
-import lk.ijse.shoeshopmanagementbackend.entity.UserEntity;
+import lk.ijse.shoeshopmanagementbackend.dto.*;
+import lk.ijse.shoeshopmanagementbackend.entity.*;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
