@@ -1,9 +1,15 @@
 package lk.ijse.shoeshopmanagementbackend.api;
 
 import jakarta.validation.Valid;
+import lk.ijse.shoeshopmanagementbackend.dto.GenderDTO;
+import lk.ijse.shoeshopmanagementbackend.dto.ItemDTO;
+import lk.ijse.shoeshopmanagementbackend.dto.OccasionDTO;
+import lk.ijse.shoeshopmanagementbackend.dto.VarietyDTO;
 import lk.ijse.shoeshopmanagementbackend.exception.NotFoundException;
 import lk.ijse.shoeshopmanagementbackend.service.GenderService;
 import lk.ijse.shoeshopmanagementbackend.service.InventoryService;
+import lk.ijse.shoeshopmanagementbackend.service.OccasionService;
+import lk.ijse.shoeshopmanagementbackend.service.VarietyService;
 import lk.ijse.shoeshopmanagementbackend.util.UtilMatters;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
