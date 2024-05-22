@@ -1,5 +1,6 @@
 package lk.ijse.shoeshopmanagementbackend.config;
 
+import lk.ijse.shoeshopmanagementbackend.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
