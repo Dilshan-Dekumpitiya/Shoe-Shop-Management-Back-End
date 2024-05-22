@@ -6,9 +6,13 @@ import lk.ijse.shoeshopmanagementbackend.exception.DuplicateException;
 import lk.ijse.shoeshopmanagementbackend.exception.NotFoundException;
 import lk.ijse.shoeshopmanagementbackend.repository.OccasionServiceDAO;
 import lk.ijse.shoeshopmanagementbackend.service.OccasionService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
+@RequiredArgsConstructor
 public class OccasionServiceImpl implements OccasionService {
 
     private final OccasionServiceDAO occasionServiceDao;
