@@ -42,4 +42,28 @@ public class ConversionData {
         return modelMapper.map(branchDTO, BranchEntity.class);
     }
 
+    public EmployeeEntity toEmployeeEntity(EmployeeDTO employeeDTO){
+        return modelMapper.map(employeeDTO, EmployeeEntity.class);
+    }
+
+    public EmployeeDTO toEmployeeDTO(Optional<EmployeeEntity> employeeEntity){
+        return modelMapper.map(employeeEntity, EmployeeDTO.class);
+    }
+
+    public List<EmployeeDTO> toEmployeeDTOList(List<EmployeeEntity> employeeEntities) {
+        return modelMapper.map(employeeEntities,List.class);
+    }
+
+    public GenderEntity toGenderEntity(GenderDTO genderDTO) {
+        return modelMapper.map(genderDTO, GenderEntity.class);
+    }
+
+    public GenderDTO toGenderDTO(GenderEntity genderEntity){
+        return modelMapper.map(genderEntity, GenderDTO.class);
+    }
+
+    public List<GenderDTO> convertToGenderDTO(List<GenderEntity> genderEntities) {
+        return modelMapper.map(genderEntities,List.class);
+    }
+
 }
