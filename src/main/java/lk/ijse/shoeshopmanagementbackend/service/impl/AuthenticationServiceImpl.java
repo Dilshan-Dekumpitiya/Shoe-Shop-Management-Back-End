@@ -1,10 +1,14 @@
 package lk.ijse.shoeshopmanagementbackend.service.impl;
 
 import lk.ijse.shoeshopmanagementbackend.conversion.ConversionData;
+import lk.ijse.shoeshopmanagementbackend.dto.UserDTO;
+import lk.ijse.shoeshopmanagementbackend.entity.UserEntity;
+import lk.ijse.shoeshopmanagementbackend.repository.UserServiceDAO;
 import lk.ijse.shoeshopmanagementbackend.secureAndResponse.response.JwtAuthResponse;
 import lk.ijse.shoeshopmanagementbackend.secureAndResponse.secure.SignIn;
 import lk.ijse.shoeshopmanagementbackend.secureAndResponse.secure.SignUp;
 import lk.ijse.shoeshopmanagementbackend.service.AuthenticationService;
+import lk.ijse.shoeshopmanagementbackend.service.JwtService;
 import lk.ijse.shoeshopmanagementbackend.util.UtilMatters;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -19,7 +23,7 @@ import org.springframework.transaction.annotation.Transactional;
 @RequiredArgsConstructor
 public class AuthenticationServiceImpl implements AuthenticationService {
     private final ConversionData conversionData;
-    private final UserServiceDao userDao;
+    private final UserServiceDAO userDao;
     private final JwtService jwtService;
     private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;

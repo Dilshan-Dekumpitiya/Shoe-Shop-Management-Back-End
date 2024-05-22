@@ -1,7 +1,9 @@
 package lk.ijse.shoeshopmanagementbackend.conversion;
 
+import lk.ijse.shoeshopmanagementbackend.dto.BranchDTO;
 import lk.ijse.shoeshopmanagementbackend.dto.CustomerDTO;
 import lk.ijse.shoeshopmanagementbackend.dto.UserDTO;
+import lk.ijse.shoeshopmanagementbackend.entity.BranchEntity;
 import lk.ijse.shoeshopmanagementbackend.entity.CustomerEntity;
 import lk.ijse.shoeshopmanagementbackend.entity.UserEntity;
 import lombok.AllArgsConstructor;
@@ -15,6 +17,7 @@ import java.util.Optional;
 @AllArgsConstructor
 public class ConversionData {
     final private ModelMapper modelMapper;
+
     public CustomerDTO convertToCustomerDTO(Optional<CustomerEntity> customerEntity){
         return modelMapper.map(customerEntity, CustomerDTO.class);
     }
@@ -34,4 +37,9 @@ public class ConversionData {
     public UserEntity toUserEntity(UserDTO userDTO){
         return modelMapper.map(userDTO, UserEntity.class);
     }
+
+    public BranchEntity toBranchEntity(BranchDTO branchDTO) {
+        return modelMapper.map(branchDTO, BranchEntity.class);
+    }
+
 }
