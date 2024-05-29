@@ -6,8 +6,9 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-@Table(name = "Stock")
+@Table (name = "Stock")
 public class StockEntity {
+
     @Id
     private String stockId;
     @ManyToOne

@@ -5,8 +5,9 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "StockSize")
+@Table (name = "StockSize")
 public class StockSizeEntity {
+
     @Id
     private String stockSizeId;
     private int qty;
@@ -19,9 +20,9 @@ public class StockSizeEntity {
     @JoinColumn(name = "stockId",nullable = false)
     private StockEntity stockEntity;
 
-    /*@ManyToOne
+    @ManyToOne
     @JoinColumn(name = "sizeCode",nullable = false)
-    private SizeEntity sizeEntity;*/
+    private SizeEntity sizeEntity;
 
     @OneToMany(mappedBy = "stockSizeEntity",cascade = CascadeType.ALL)
     private List<StockSizeOrderDetailsEntity> stockSizeOrderDetailsEntities;
