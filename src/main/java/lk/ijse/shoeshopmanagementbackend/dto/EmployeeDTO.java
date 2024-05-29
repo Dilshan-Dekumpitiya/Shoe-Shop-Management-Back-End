@@ -13,6 +13,7 @@ import java.sql.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EmployeeDTO implements SuperDTO{
+
     @Null(message = "Employee code generate by the program")
     private String employeeCode;
     @NotBlank(message = "Employee name cannot be blank")
