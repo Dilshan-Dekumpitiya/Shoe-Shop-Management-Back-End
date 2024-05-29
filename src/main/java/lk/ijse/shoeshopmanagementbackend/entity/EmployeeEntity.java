@@ -8,7 +8,7 @@ import lombok.Data;
 import java.sql.Date;
 
 @Entity
-@Table(name = "Employee")
+@Table (name = "Employee")
 @Data
 public class EmployeeEntity {
     @Id

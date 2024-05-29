@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.List;
 
 @Entity
-@Table(name = "Occassion")
+@Table (name = "Occassion")
 @Data
 public class OccasionEntity {
     @Id

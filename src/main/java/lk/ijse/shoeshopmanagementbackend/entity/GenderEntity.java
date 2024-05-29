@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Entity
-@Table(name = "gender")
+@Table (name = "gender")
 @Data
 @Builder
 @AllArgsConstructor
@@ -20,4 +20,5 @@ public class GenderEntity {
     private String genderDesc;
     @OneToMany(mappedBy = "genderEntity",cascade = CascadeType.ALL)
     private List<ItemEntity> itemEntities;
+
 }

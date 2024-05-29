@@ -13,6 +13,7 @@ import java.util.List;
 @Table(name = "customer")
 @Data
 public class CustomerEntity {
+
     @Id
     private String customerId;
 
@@ -38,6 +39,7 @@ public class CustomerEntity {
     private String email;
     private Timestamp recentPurchasedDate;
 
-//    @OneToMany(mappedBy = "customerEntity",cascade = CascadeType.ALL)
-//    private List<OrderEntity> orderEntities;
+    @OneToMany(mappedBy = "customerEntity",cascade = CascadeType.ALL)
+    private List<OrderEntity> orderEntities;
+
 }
