@@ -2,6 +2,7 @@ package lk.ijse.shoeshopmanagementbackend.api;
 
 import lk.ijse.shoeshopmanagementbackend.dto.SupplierDTO;
 import lk.ijse.shoeshopmanagementbackend.exception.NotFoundException;
+import lk.ijse.shoeshopmanagementbackend.service.SupplierService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

@@ -5,6 +5,7 @@ import lk.ijse.shoeshopmanagementbackend.dto.CustomerDTO;
 import java.util.List;
 
 public interface CustomerService {
+
     void saveCustomer(CustomerDTO customerDTO);
 
     CustomerDTO getCustomer(String id);
@@ -14,4 +15,6 @@ public interface CustomerService {
     void deleteCustomer(String id);
 
     void updateCustomer(String id,CustomerDTO customerDTO);
+
+    String getCustomerId();
 }

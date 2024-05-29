@@ -27,6 +27,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
         prePostEnabled = true
 )
 public class SecurityConfig {
+
     private final UserService userService;
 
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
@@ -35,7 +36,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests(req->req.requestMatchers("api/v1/auth/**")
+                .authorizeHttpRequests(req->req.requestMatchers("api/v1/**")
                         .permitAll()
                         .anyRequest()
                         .authenticated())
@@ -59,4 +60,5 @@ public class SecurityConfig {
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
+
 }
