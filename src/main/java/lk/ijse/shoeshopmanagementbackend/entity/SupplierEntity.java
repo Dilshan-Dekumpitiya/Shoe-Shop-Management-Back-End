@@ -10,6 +10,7 @@ import java.util.List;
 @Table(name = "Supplier")
 @Data
 public class SupplierEntity {
+
     @Id
     private String supplierCode;
     private String supplierName;
