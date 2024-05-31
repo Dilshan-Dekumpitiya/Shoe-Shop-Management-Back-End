@@ -13,7 +13,7 @@ The Shoe Shop Management System is a comprehensive solution designed to streamli
 
 ## ER Diagram
 
-![](README Assets/ER Diagram.png)
+![](README-Assets/ER-Diagram.png)
 
 ## Technologies Used
 
